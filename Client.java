@@ -26,10 +26,10 @@ public class Client {
 
 
     public void addDebt(Dette debt) {
-        this.dette.add(debt);  // Ajoute la dette à la liste
+        this.dette.add(debt);  
     }
 
-    // Méthode pour vérifier si le client a au moins un compte
+   
     public boolean hasAccount() {
         return !comptes.isEmpty();
     }
