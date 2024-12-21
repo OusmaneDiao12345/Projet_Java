@@ -19,12 +19,12 @@ public class Client {
     private String adresse;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
-    private List<Dette> dette = new ArrayList<>();  // Liste des dettes du client
+    private List<Dette> dette = new ArrayList<>(); 
     
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
-    private List<User> comptes = new ArrayList<>();  // Liste des comptes utilisateur du client
+    private List<User> comptes = new ArrayList<>();  
 
-    // Méthode pour ajouter une dette à la liste des dettes du client
+
     public void addDebt(Dette debt) {
         this.dette.add(debt);  // Ajoute la dette à la liste
     }
